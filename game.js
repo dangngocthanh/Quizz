@@ -62,7 +62,7 @@ function p5() {
 
 
 function ktra() {
-    if (check1===check2===check3===check4===check5){
+    if (check1===check2 && check2===check3 && check3===check4 && check4===check5){
         let css=document.getElementsByTagName("div");
         css.style.height=" 108px";
         css.style.width=" 864px";
