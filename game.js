@@ -1,8 +1,8 @@
-let check1= 0;
-let check2= 0;
-let check3= 0;
-let check4= 0;
-let check5= 0;
+let check1= 3;
+let check2= 1;
+let check3= 3;
+let check4= 2;
+let check5= 1;
 function p1() {
     console.log(document.getElementById("p1").src)
     if (document.getElementById("p1").src === "http://localhost:63342/Quizz-game/p1-1.jpeg") {
@@ -63,10 +63,19 @@ function p5() {
 
 function ktra() {
     if (check1===check2 && check2===check3 && check3===check4 && check4===check5){
-        let css=document.getElementsByTagName("div");
-        css.style.height=" 108px";
-        css.style.width=" 864px";
-        css.style.border="5px solid";
+        let css=document.getElementById('p1')
+        css.style.boxShadow="6px 6px 6px Red";
+        css.style.padding="1px";
+        css=document.getElementById('p2')
+        css.style.boxShadow="6px 6px 6px Red";
+        css.style.padding="1px";
+        css=document.getElementById('p3')
+        css.style.boxShadow="6px 6px 6px Red";
+        css.style.padding="1px";
+        css=document.getElementById('p4')
+        css.style.boxShadow="6px 6px 6px Red";
+        css.style.padding="1px";
+        css=document.getElementById('p5')
         css.style.boxShadow="6px 6px 6px Red";
         css.style.padding="1px";
     }
